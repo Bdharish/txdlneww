@@ -47,7 +47,7 @@ mkv = f'..mkv'
 
 @bot.on_message(filters.command(["help"]))
 async def help_handler(bot: Client, m: Message):
-    await m.reply_text(f"Hello Im TxT File Downloader\n\n**Steps To Use Bot:**\n **1:** Send /up_vid to Upload Videos in Streamable Formate & then Send Your .txt file.\n **2:** Now Send From Where You Want To    Download Initial is 0 .\n **3:** Now Send Your File Name or Use `de` For.  Use Default File Name.\n **4:** Now Send Resolution In Which Quality    You Want.\n **5:** Now Send Custom Thum URL or    Send `no` to Use Defalut Thumbnail.\n **6:** Now Wait Bot will Download & Upload Your Videos.\n\n**")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    await m.reply_text(f"Hello Iam Txt Bot Made By Shivam**")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 @bot.on_message(filters.command(["cancel"]))
 async def cancel(_, m):
@@ -64,7 +64,7 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**Hi!, I'm PyroBot. I Can Download All Links In A Txt File & Send Them To You.\n\nUse /help To Get Some Help 😉\n\n Use /up_vid Command to Upload Videos in Streamable Formate & /up_dov to Upload In Document Formate!!!**")
+    editable = await m.reply_text("**Alive**")
 
 
 @bot.on_message(filters.command(["up_vid"]))
@@ -106,7 +106,7 @@ async def account_login(bot: Client, m: Message):
         CR = raw_text0
 
     
-    await m.reply_text("**Enter Resolution \nExamples: __480 = SD Quality\n             720 = HD Quality\n             1080 = FHD Quality__**")
+    await m.reply_text("**Enter Resolution**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
         
@@ -351,7 +351,7 @@ async def account_login(bot: Client, m: Message):
                         reply = await m.reply_text(f"Uploading » {str(count).zfill(3)}-{name}\n\n")
                         time.sleep(1)
                         start_time = time.time()
-                        await m.reply_document(ka, caption=f'**File No. »** {str(count).zfill(3)}\n**File Name »** {name1} {pdf}\n')
+                        await m.reply_document(ka, caption=f'**File No. »** **{str(count).zfill(3)}**\n**File Name »** **{name1}** **{pdf}**\n')
                         count+=1
                         # time.sleep(1)
                         await reply.delete (True)
