@@ -40,15 +40,14 @@ bot = Client(
 
 bot_token=Config.BOT_TOKEN
 bot1 = telegram.Bot(token=bot_token)
-channel = f'@Bhuriyabhai2'
-owner = f'@Bhuriyabhai2'
-pdf = f'@@BHURIYAA_BOT.pdf'
-video = f'@BHURIYAA_BOT.mp4'
-mkv = f'@BHURIYAA_BOT.mkv'
+channel = f'.'
+pdf = f'..pdf'
+video = f'..mp4'
+mkv = f'..mkv'
 
 @bot.on_message(filters.command(["help"]))
 async def help_handler(bot: Client, m: Message):
-    await m.reply_text(f"Hello Im TxT File Downloader\n\n**Steps To Use Bot:**\n **1:** Send /up_vid to Upload Videos in Streamable Formate & then Send Your .txt file.\n **2:** Now Send From Where You Want To    Download Initial is 0 .\n **3:** Now Send Your File Name or Use `de` For.  Use Default File Name.\n **4:** Now Send Resolution In Which Quality    You Want.\n **5:** Now Send Custom Thum URL or    Send `no` to Use Defalut Thumbnail.\n **6:** Now Wait Bot will Download & Upload Your Videos.\n\n**Bot made by {owner} & Updated By {channel} **")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    await m.reply_text(f"Hello Im TxT File Downloader\n\n**Steps To Use Bot:**\n **1:** Send /up_vid to Upload Videos in Streamable Formate & then Send Your .txt file.\n **2:** Now Send From Where You Want To    Download Initial is 0 .\n **3:** Now Send Your File Name or Use `de` For.  Use Default File Name.\n **4:** Now Send Resolution In Which Quality    You Want.\n **5:** Now Send Custom Thum URL or    Send `no` to Use Defalut Thumbnail.\n **6:** Now Wait Bot will Download & Upload Your Videos.\n\n**")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 @bot.on_message(filters.command(["cancel"]))
 async def cancel(_, m):
